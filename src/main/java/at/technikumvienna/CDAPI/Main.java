@@ -1,4 +1,4 @@
-package at.institution.projectname;
+package at.technikumvienna.CDAPI;
 
 import org.apache.log4j.PropertyConfigurator;
 
