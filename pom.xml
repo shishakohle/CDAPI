@@ -3,12 +3,16 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>groupid</groupId>
-	<artifactId>artifactid</artifactId>
-	<version>1</version>
-	<name>projectname</name>
-	<description>projectdescription</description>
-	<url>https://github.com/shishakohle/maven-java-template</url>
+	<groupId>at.technikumvienna</groupId>
+	<artifactId>CDAPI</artifactId>
+	<version>0.0.1-alpha1</version>
+	<name>CDAPI</name>
+	<description>API for the creation of HL7 CDA Files in Java Applications.</description>
+	<url>https://github.com/shishakohle/CDAPI</url>
+	<organization>
+		<name>Technikum Vienna University of Applied Sciences</name>
+		<url>https://www.technikum-wien.at/</url>
+	</organization>
 
 	<dependencies>
 
@@ -38,5 +42,4 @@
 		</dependency>
 
 	</dependencies>
-
 </project>

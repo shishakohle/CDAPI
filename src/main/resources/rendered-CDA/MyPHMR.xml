@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"?>
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 ..\..\..\0.Standards\HL7\CCD\CDASchemas\cda\Schemas\CDA.xsd">
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.10.20.9"/>
+	<id root="proof of concept only. not implemented."/>
+	<code code="53576-5" codeSystem="2.16.840.1.113883.6.1"/>
+	<title>Personal Healthcare Monitoring Report</title>
+	<effectiveTime value="20201102043548+0100"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<recordTarget>
+		<patientRole>
+			<id extension="proof of concept only." root="not implemented."/>
+			<patient>
+				<name>
+					<given>Anna</given>
+					<family>Cunningham</family>
+				</name>
+				<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" displayName="Female" codeSystemName="AdministrativeGender"/>
+				<birthTime value="19910208"/>
+				<maritalStatusCode code="S" displayName="Single" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author>
+		<time value="20201102043549+0100"/>
+		<assignedAuthor>
+			<id extension="proof of concept only." root="not implemented."/>
+			<assignedPerson>
+				<name>Dr. Henry Seven</name>
+			</assignedPerson>
+			<representedOrganization>
+				<id extension="proof of concept only." root="not implemented."/>
+				<name>Good Health Disease Management</name>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+				<id extension="proof of concept only." root="not implemented."/>
+				<name>Good Health Hospital</name>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<component>
+		<structuredBody>
+			<component>
+				<section>
+					<entry typeCode="COMP">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.31"/>
+							<templateId root="2.16.840.1.113883.10.20.9.8"/>
+							<code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Body weight Measured"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20201102093015+0100"/>
+							<value xsi:type="PQ" value="72" unit="kg"/>
+							<participant typeCode="DEV">
+								<participantRole>
+									<id root="1.2.840.10004.1.1.1.0.0.1.0.0.1.2680" assigningAuthorityName="EUI-64" extension="1A-3E-41-78-9A-BC-DE-42"/>
+								</participantRole>
+							</participant>
+						</observation>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.31"/>
+							<templateId root="2.16.840.1.113883.10.20.9.8"/>
+							<code code="76534-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Systolic blood pressure by Noninvasive"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20201102093327+0100"/>
+							<value xsi:type="PQ" value="120" unit="mmHg"/>
+							<participant typeCode="DEV">
+								<participantRole>
+									<id root="1.2.840.10004.1.1.1.0.0.1.0.0.1.2680" assigningAuthorityName="EUI-64" extension="1A-3E-41-78-9A-BC-DE-42"/>
+								</participantRole>
+							</participant>
+						</observation>
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.31"/>
+							<templateId root="2.16.840.1.113883.10.20.9.8"/>
+							<code code="76535-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Diastolic blood pressure by Noninvasive"/>
+							<statusCode code="completed"/>
+							<effectiveTime value="20201102093327+0100"/>
+							<value xsi:type="PQ" value="80" unit="mmHg"/>
+							<participant typeCode="DEV">
+								<participantRole>
+									<id root="1.2.840.10004.1.1.1.0.0.1.0.0.1.2680" assigningAuthorityName="EUI-64" extension="1A-3E-41-78-9A-BC-DE-42"/>
+								</participantRole>
+							</participant>
+						</observation>
+
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
